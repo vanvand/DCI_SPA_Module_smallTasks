@@ -1,0 +1,21 @@
+
+/* set space at top to push showcase down, so that navbar is not overlapping */
+body::before {
+    display: block;
+    content: "";
+    height: 60px;
+}
+
+/* custom screen size for newsletter input > smaller width for all screens over 768px */
+@media(min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+/* set width and height on map to be shown */
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}

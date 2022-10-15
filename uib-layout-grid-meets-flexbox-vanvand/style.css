@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: 0.5fr 3fr 2fr 1fr;
+
+    grid-template-areas: 
+    "h h n"
+    "m m a1"
+    "a2 s a1"
+    "f f f";
+
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+/* target all direct childrens of body
+but specifity is very low */
+body > * {
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+/* alternative apply class */
+.gridItem {
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+header{
+    grid-area: h;
+    background-color: lightyellow;
+}
+
+nav {
+    grid-area: n;
+    background-color: lightgrey;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    color: purple;
+}
+
+main {
+    grid-area: m;
+    background-color: peachpuff;
+}
+
+.asideOne {
+    grid-area: a1;
+    background-color: lightgreen;
+}
+
+.asideTwo {
+    grid-area: a2;
+    background-color: lightgreen;
+}
+
+section {
+    grid-area: s;
+    background-color: lightpink;
+}
+
+footer {
+    grid-area: f;
+    background-color: lightgray;
+}

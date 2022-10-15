@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vanessa Domas" />
+    <meta
+      name="description"
+      content="Sweet Book Store with hand selected assortment"
+    />
+    <meta name="keywords" content="html, css, simple web page" />
+
+    <title>Book Store</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Header with navigation bar and head shot -->
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#childrenGenre">Children</a>
+        <a href="#romanceGenre">Romance</a>
+      </nav>
+
+      <img
+        src="./images/books.jpg"
+        alt="big bookshelf full of antique looking books"
+      />
+    </header>
+
+    <!-- Main with three section 1x2 & 2x3 grid -->
+    <main>
+      <!-- EDITORS CHOICE -->
+      <section class="editor clearfix">
+        <h3 class="editorHeading">Editor's Choice</h3>
+
+        <div class="editorItem">
+          <img
+            class="floatLeft"
+            src="./images/tom_sawyer.jpg"
+            alt="Tom Sawyer"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi
+            eius facilis reprehenderit? Alias dolorem voluptas illum rerum esse,
+            ab modi sunt facilis odio non, quo inventore vero nesciunt sequi.
+          </p>
+        </div>
+
+        <div class="editorItem">
+          <img
+            class="floatRight"
+            src="./images/cleopatra.jpeg"
+            alt="Cleopatra"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro modi
+            eius facilis reprehenderit? Alias dolorem voluptas illum rerum esse,
+            ab modi sunt facilis odio non, quo inventore vero nesciunt sequi.
+          </p>
+        </div>
+      </section>
+
+      <!-- CHILDREN BOOKS -->
+      <section class="genre clearfix" id="childrenGenre">
+        <h3 class="genreHeading">Children Books</h3>
+
+        <div class="genreContainer">
+          <!-- 1st Item -->
+          <div class="genreItem">
+            <img
+              class="floatLeft"
+              src="./images/tom_sawyer.jpg"
+              alt="Tom Sawyer Book Cover"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim rem
+              quam necessitatibus assumenda obcaecati quas, ullam recusandae
+              officia, ducimus voluptatum, quo impedit sunt. Maiores doloremque
+              incidunt molestiae! Natus, laborum culpa?
+            </p>
+          </div>
+
+          <!-- 2nd Item -->
+          <div class="genreItem">
+            <img
+              class="floatLeft"
+              src="./images/pinocchio.jpg"
+              alt="Pinocchio Book Cover"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim rem
+              quam necessitatibus assumenda obcaecati quas, ullam recusandae
+              officia, ducimus voluptatum, quo impedit sunt. Maiores doloremque
+              incidunt molestiae! Natus, laborum culpa?
+            </p>
+          </div>
+
+          <!-- 3rd Item -->
+          <div class="genreItem">
+            <img
+              class="floatLeft"
+              src="./images/alice.jpeg"
+              alt="Alice in Wonderland Book Cover"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim rem
+              quam necessitatibus assumenda obcaecati quas, ullam recusandae
+              officia, ducimus voluptatum, quo impedit sunt. Maiores doloremque
+              incidunt molestiae! Natus, laborum culpa?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ROMANCE BOOKS -->
+
+      <section class="genre clearfix" id="romanceGenre">
+        <h3 class="genreHeading">Romance Books</h3>
+
+        <div class="genreContainer">
+          <!-- 1st Item -->
+          <div class="genreItem">
+            <img
+              class="floatRight"
+              src="./images/anna.jpg"
+              alt="Anna Book Cover"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim rem
+              quam necessitatibus assumenda obcaecati quas, ullam recusandae
+              officia, ducimus voluptatum, quo impedit sunt. Maiores doloremque
+              incidunt molestiae! Natus, laborum culpa?
+            </p>
+          </div>
+
+          <!-- 2nd Item -->
+          <div class="genreItem">
+            <img
+              class="floatRight"
+              src="./images/don.jpg"
+              alt="Don Quixote Book Cover"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim rem
+              quam necessitatibus assumenda obcaecati quas, ullam recusandae
+              officia, ducimus voluptatum, quo impedit sunt. Maiores doloremque
+              incidunt molestiae! Natus, laborum culpa?
+            </p>
+          </div>
+
+          <!-- 3rd Item -->
+          <div class="genreItem">
+            <img
+              class="floatRight"
+              src="./images/cleopatra.jpeg"
+              alt="Cleopatra Book Cover"
+            />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim rem
+              quam necessitatibus assumenda obcaecati quas, ullam recusandae
+              officia, ducimus voluptatum, quo impedit sunt. Maiores doloremque
+              incidunt molestiae! Natus, laborum culpa?
+            </p>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+      </section>
+    </main>
+
+    <!-- Footer with navigation -->
+    <footer>
+      <div class="footer">
+        <nav>
+          <a href="#top">Home</a>
+          <a href="#childrenGenre">Children</a>
+          <a href="#romanceGenre">Romance</a>
+        </nav>
+        <p>All rights reserved &copy; - 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>

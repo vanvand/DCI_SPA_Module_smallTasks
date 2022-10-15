@@ -1,0 +1,94 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  color: #333333;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* background styling */
+#container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/background.jpg);
+  background-position: center;
+  margin: 0 auto;
+}
+
+/* header styling */
+header img {
+  width: 50%;
+  margin-top: 30px;
+}
+
+/* general content div styling */
+.content {
+  width: 50%;
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+/* welcome container styling */
+#welcome {
+  border: 8px solid black;
+}
+
+/* form stlying */
+#reservation {
+  height: 400px;
+}
+
+label {
+  display: block;
+  background-color: #333333;
+  color: white;
+  width: 60%;
+  margin: 10px auto 0 auto;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.55em;
+  text-align: left;
+}
+
+input {
+  width: 60%;
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+  font-size: 1.1em;
+  padding: 5px;
+  border: none;
+}
+
+[type=submit] {
+  background-color: #333333;
+  color: white;
+  margin-top: 10px;
+}
+
+/* footer styling */
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}

@@ -1,0 +1,138 @@
+/* ________________________________________________________________ */
+/* Styling all elements in body */
+body {
+    font-family: sans-serif;
+    color: #202122;
+    /* top | right | bottom | left */
+    padding: 10px 20px 10px 20px;
+}
+
+/* ________________________________________________________________ */
+/* Styling anchor tags */
+
+a:link {
+    text-decoration: none;
+    color: #0645AD;
+}
+
+a:visited {
+    color: #142180;
+}
+
+/* !!MISSING: add short preview of page with JS (!?) */
+a:link:hover {
+    border-bottom: 2px solid #0645AD;
+}
+
+a:visited:hover {
+    border-bottom: 2px solid #142180;
+}
+
+
+/* ________________________________________________________________ */
+/* Styling headings */
+h1 {
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+
+/* ________________________________________________________________ */
+/* Styling Intro Box */
+
+table.overviewBox {
+    float: right;
+    margin: 1em 0 2em 3em;
+}
+
+table {
+    width: 290px;
+    /* border: 1px solid black; */
+    caption-side: top;
+    border-collapse: collapse;
+}
+
+/* Intro Box: table caption */
+caption {
+    font-size: larger;
+    font-weight: 700;
+}
+
+tbody td:first-child {
+    font-weight: 700;
+    text-align: left;
+    vertical-align: top;
+}
+
+tbody hr {
+    border: 1px solid#a2a9b1;
+    width: 98%;
+}
+
+tbody td {
+    padding-top: 2px;
+    padding-bottom: 4px;
+    padding-right: 5px;
+    padding-left: 8px;
+    font-size: 90%;
+}
+
+/* ________________________________________________________________ */
+/* Styling Index */
+.index {
+    border: 1px solid #a2a9b1;
+    background-color: #F8F9FA;
+    width: 25%;
+}
+
+.index h2 {
+    padding-left: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+ul {
+    padding-left: 10px;
+    margin-top: 10px;
+
+}
+
+ul li {
+    padding-bottom: 6px;
+}
+
+.indexnum {
+    padding-right: 6px;
+    color: black;
+}
+
+/* ________________________________________________________________ */
+/* Styling Sections */
+.section ul {
+    padding-left: 35px;
+}
+
+#footnote {
+    padding-left: 20px;
+    font-size: smaller;
+}
+
+/* ________________________________________________________________ */
+/* Styling Category Links */
+#categoryLinks {
+    border: 1px solid #a2a9b1;
+    background-color: #F8F9FA;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#categoryLinks span {
+    padding-right: 2px;
+    color: #a2a9b1;
+    font-size: smaller;
+}

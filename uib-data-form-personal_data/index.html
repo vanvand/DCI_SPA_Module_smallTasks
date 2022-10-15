@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>...</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>Forms</header>
+    <main>
+      <form>
+        <!-- left Form -->
+        <div class="formColumn" id="leftColumn">
+          <fieldset>
+            <legend>Personal Data</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" />
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" />
+
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" />
+
+            <label for="zipCode">Zipcode:</label>
+            <input type="text" id="zipCode" name="zipCode" />
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="comments">Comments:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Tell us more about important color, etc."
+            ></textarea>
+          </fieldset>
+        </div>
+
+        <!-- right Form -->
+        <div class="formColumn">
+          <fieldset>
+            <legend>Products</legend>
+
+            <!-- Web Design -->
+            <div class="web_design">
+              <h4>Web Design:</h4>
+              <div>
+                <input
+                  type="radio"
+                  id="webdesign-ind"
+                  name="webDesign"
+                  value="Individual"
+                  checked
+                />
+                <label for="webdesign-ind">Individual</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="webdesign-temp"
+                  name="webDesign"
+                  value="template"
+                />
+                <label for="webdesign-temp">Template</label>
+              </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="web_dev">
+              <h4>Web Development:</h4>
+              <div>
+                <input
+                  type="checkbox"
+                  id="webDev-html"
+                  name="webDev"
+                  value="HTML & CSS"
+                  checked
+                />
+                <label for="webDev-html">HTML & CSS</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="webDev-js"
+                  name="webDev"
+                  value="JavaScript"
+                />
+                <label for="webDev-js">JavaScript</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="webDev-mongo"
+                  name="webDev"
+                  value="MongoDB"
+                />
+                <label for="webDev-mongo">MongoDB</label>
+              </div>
+            </div>
+
+            <!-- Others -->
+            <label for="projectStart">Project Start:</label>
+            <input type="date" id="projectStart" name="projectStart" />
+
+            <label for="projectEnd">Project End:</label>
+            <input type="date" id="projectEnd" name="projectEnd" />
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+              <option value="Personal">Personal</option>
+              <option value="Buisness">Buisness</option>
+              <option value="Government">Government</option>
+            </select>
+          </fieldset>
+
+          <!-- submit button -->
+          <input type="submit" value="Order our services" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

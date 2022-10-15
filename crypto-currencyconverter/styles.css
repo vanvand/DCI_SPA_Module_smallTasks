@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 40px;
+}
+
+div {
+    margin: 20px;
+    display: flex;
+}
+
+label, button {
+    background-color: #5328ee;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 20px;
+    color: white;
+    border: transparent;
+}
+#test {
+    background-color: red;
+}
+
+button {
+    border-radius: 7px;
+    margin-left: 0px;
+}
+
+#conversionResult {
+    width: 90vw;
+    height: 30px;
+    background-color: lightgrey;
+}
+
+#cryptoValue {
+    width: 90vw;
+    height: 30px;
+}

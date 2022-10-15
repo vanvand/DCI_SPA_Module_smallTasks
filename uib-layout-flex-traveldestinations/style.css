@@ -1,0 +1,315 @@
+/* reset css */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* gernal styling */
+:root {
+    font-size: 62.5%;
+
+    --main-btn-color: #8AD6F6;
+    --sub-btn-color: #F5A431;
+
+    --light-txt-color: #808080;
+    --middle-txt-color: #4e4e4e;
+    --footer-txt-color: #6b6b6b;
+
+    --main-bg-color: #F5F5F5;
+    --footer-bg-color: #D5D5D5;
+
+    --space-leftright: 40px;
+    --space-small-leftright: 20px;
+    --space-sub-leftright: 15px;
+
+    --icon-fb: #0000ff;
+    --icon-tw: #1c9ced;
+    --icon-ig: #f80900;
+}
+
+.button {
+    background-color: var(--main-btn-color);
+    border: 1px solid var(--main-btn-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.6rem;
+}
+
+.subbutton {
+    background-color: var(--sub-btn-color);
+    border: 1px solid var(--sub-btn-color);
+}
+
+.smallerbutton {
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--main-btn-color);
+    border: 1px solid var(--main-btn-color);
+}
+
+.subbutton:hover {
+    color: var(--sub-btn-color);
+    border: 1px solid var(--sub-btn-color);
+}
+
+/*  body styling */
+body {
+    font-family: 'Catamaran', sans-serif;
+}
+
+/* Navigation Banner */
+header {
+    height: 70px;
+    border-bottom: 5px solid var(--main-btn-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 20px;
+    color: black;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--light-txt-color);
+}
+
+header img {
+    margin-left: var(--space-leftright);
+}
+
+/* Weclome Banner */
+.welcome {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.welcome h1 {
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+.welcome p {
+    font-size: 1.9rem;
+    font-weight: 200;
+    color: var(--light-txt-color);
+    width: 55%;
+    margin: 10px auto;
+}
+
+.welcome div {
+    padding: 20px;
+}
+
+.welcome div a {
+    margin: 0 10px;
+}
+
+/* Main */
+main {
+    background-color: var(--main-bg-color);
+    padding: var(--space-leftright);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: calc(33.33% - 14px);
+    margin-bottom: 35px;
+    box-shadow: 1px 1px 10px #cbcbcb;
+}
+
+.card:nth-child(1),
+.card:nth-child(2),
+.card:nth-child(4),
+.card:nth-child(5) {
+    margin-right: 20px;
+}
+
+.card:hover {
+    box-shadow: -5px -5px 10px #a7a7a7;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    color: var(--middle-txt-color);
+    margin: 10px var(--space-sub-leftright);
+}
+
+.card p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--light-txt-color);
+    line-height: 22px;
+    margin: 0 var(--space-sub-leftright);
+    text-align: justify;
+}
+
+.card>div {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px var(--space-sub-leftright);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--light-txt-color);
+}
+
+.card div a {
+    margin-right: 7px;
+}
+
+/* Footer */
+footer {
+    border-top: 5px solid var(--main-btn-color);
+    background-color: var(--footer-bg-color);
+    padding: 20px var(--space-leftright);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+address div {
+    padding: 4px;
+}
+
+.socialMedia div {
+    padding: 7px;
+    text-align: right;
+}
+
+address,
+.socialMedia a {
+    color: var(--footer-txt-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.socialMedia a:hover {
+    color: black;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+/* fontawesome styling */
+footer i {
+    color: black;
+    font-size: 1.4rem;
+}
+
+.fab {
+    font-size: 2.8rem;
+    margin-left: 5px;
+}
+
+.fa-facebook-square {
+    color: var(--icon-fb);
+}
+
+.fa-twitter-square {
+    color: var(--icon-tw);
+}
+
+.fa-instagram {
+    color: var(--icon-ig);
+}
+
+
+/* Responsive breakpoints:
+tablet 768px
+mobile 480px */
+
+@media screen and (max-width: 768px) {
+    /* Navigation Banner */
+    header img {
+        margin-left: var(--space-small-leftright);
+    }
+
+    /* Weclome Banner */
+    .welcome p {
+        width: 85%;
+    }
+
+    /* Main */
+    main {
+        padding: 40px var(--space-small-leftright);
+    }
+
+    .card {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .card:nth-child(1),
+    .card:nth-child(3),
+    .card:nth-child(5) {
+        margin-right: 20px;
+    }
+
+    .card:nth-child(2),
+    .card:nth-child(4),
+    .card:nth-child(6) {
+        margin-right: 0;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px var(--space-small-leftright);
+    }
+
+    address,
+    .socialMedia a,
+    footer i {
+        font-size: 1.2rem;
+    }
+
+    iframe {
+        width: 250px;
+        height: 150px;
+    }
+
+    .fab {
+        font-size: 2.2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        /* Main */
+        .card {
+            flex-basis: 100%;
+        }
+
+        .card:nth-child(1),
+        .card:nth-child(3),
+        .card:nth-child(5) {
+            margin-right: 0px;
+        }
+
+        /* Footer */
+        footer {
+            display: block;
+        }
+
+        iframe {
+            width: 100%;
+            margin: 20px 0;
+        }

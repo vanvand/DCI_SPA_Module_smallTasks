@@ -1,0 +1,70 @@
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items:center;
+}
+
+main {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.text {
+    height: 100%;
+    display: grid;
+    place-content: center;
+    font-size: 3rem;
+}
+
+.item {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+
+    transition: 1s linear;
+}
+
+.box1 {
+    transform-origin: top left;
+    background-color: lightseagreen;
+    top: 0;
+    left: 0;
+}
+.box2 {
+    transform-origin: top right;
+    background-color: lime;
+    top: 0;
+    right: 0;
+}
+.box3 {
+    transform-origin: bottom left;
+    background-color: pink;
+    bottom: 0;
+    left: 0;
+}
+.box4 {
+    transform-origin: bottom right;
+    background-color:hotpink;
+    top: 50%;
+    left: 50%;
+}
+
+main:hover .box1  {
+    /* transform: translateX(50px) to move the square bit outside, but not needed here */
+    transform: rotate(90deg);
+}
+
+main:hover .box2 {
+    transform: rotate(-90deg);
+}
+
+main:hover .box3 {
+    transform: rotate(-90deg);
+}
+
+main:hover .box4 {
+    transform: rotate(90deg);
+}

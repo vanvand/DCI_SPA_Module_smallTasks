@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    display: flex;
+    text-align: center;
+}
+
+main {
+    width: 50%;
+    height: auto;
+    margin: 50px auto;
+    padding: 15px;
+
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow:
+        9px 9px 27px #d5d5d5,
+        -9px -9px 27px #ffffff,
+        -3px -3px 6px #d5d5d5,
+        3px 3px 6px #ffffff;
+}
+
+/* header styling */
+header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* general button styling */
+header .fas,
+.controlbar .fas {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+
+
+    border-radius: 10px;
+    background: #f5f5f5;
+    box-shadow:
+        inset 7px 7px 11px #d5d5d5,
+        inset -7px -7px 11px #ffffff;
+}
+
+.fa-power-off {
+    color: red;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+/* Track info */
+.track>div {
+    margin: 10px auto;
+    width: 80%;
+}
+
+.track img {
+    width: 100%;
+    margin-top: 30px;
+
+    border-radius: 50%;
+    box-shadow:
+        -3px 3px 5px #b8b8b8,
+        3px -3px 5px #ffffff;
+}
+
+.track h2 {
+    color: #999898;
+    margin: 20px 0;
+}
+
+.track .progressbar {
+    height: 12px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #f5f5f5;
+}
+
+.track .progressbar>div {
+    width: 70%;
+    height: 10px;
+    background: cyan;
+    background: radial-gradient(circle, rgb(40, 152, 226) 10%, cyan 90%);
+    border-radius: 30px
+}
+
+/* control bar styling */
+.controlbar {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* general fas styling from above */
+.controlbar .fa-backward,
+.controlbar .fa-forward {
+    background: #f5f5f5;
+    box-shadow:
+        -5px 5px 5px #d5d5d5,
+        5px -5px 5px #ffffff;
+}
+
+.controlbar .fa-play {
+    background: #f5f5f5;
+    box-shadow:
+        inset -7px 7px 11px #d5d5d5,
+        inset 7px -7px 11px #ffffff;
+    color: cyan;
+}
+
+/* footer styling */
+footer {
+    width: 50%;
+    height: 5px;
+    margin: 30px auto;
+
+    border-radius: 30px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5727959437086092) 19%, rgba(218, 218, 218, 1) 64%);
+
+}

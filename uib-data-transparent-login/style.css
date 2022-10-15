@@ -1,0 +1,101 @@
+/* CSS variables */
+
+:root {
+    --start-color: rgba(0, 0, 0, 0.6);
+    --end-color: var(--start-color);
+    --fallback-color: #333;
+    --border-color: #4caf50;
+    --image-url: url(https://unsplash.it/500/500);
+    --color: #fff;
+    --placeholder-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+  
+    font-family: sans-serif;
+    color: var(--color);
+  
+    background: var(--fallback-color);
+    background:
+      /* topmost layer */
+      linear-gradient(
+        var(--start-color),
+        var(--end-color)
+      ),
+      /* image on a lower layer */
+      var(--image-url) no-repeat center / cover;
+  }
+  
+  /* Form */
+  
+  form {
+    width: 16em;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  h1 {
+    text-align: center;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.25em;
+    border-bottom: 0.125em solid var(--border-color);
+  }
+  
+  input {
+    padding: 0.2em;
+    background-color: transparent;
+    color: var(--color);
+    font-size: 100%;
+    width: 14em;
+  }
+  
+  .input-box {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1.5em;
+  }
+  
+  i.fas {
+    font-size: 100%;
+    width: 1em;
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    border: 0;
+  }
+  
+  input::placeholder {
+    color: var(--placeholder-color);
+    font-size: 0.7rem;
+  }
+  
+  input:focus::placeholder {
+    font-weight: bold;
+  }
+  
+  input:focus {
+      border: none;
+      outline: none;
+  }
+  input[type="button"] {
+    width: 100%;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: var(--color);
+  }
+  input[type="button"]:hover {
+    background: var(--border-color);
+  }

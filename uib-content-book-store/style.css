@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+
+/* Reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* general styling */
+body {
+  font-family: 'Josefin Slab', serif;
+}
+
+main {
+  width: 95%;
+  /* vertical | horizontal */
+  margin: 0 auto;
+}
+
+h3 {
+  font-family: 'Caveat', cursive;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background-color: #cef9fc;
+  color: #0f86ee;
+}
+.genreHeading {
+  background-color: #fcd5ce;
+  color: #f74f31;
+}
+
+.floatLeft {
+  float: left;
+  margin: 10px;
+}
+
+.floatRight {
+  float: right;
+  margin: 10px;
+}
+
+p {
+  line-height: 18px;
+  text-align: justify;
+  margin: 6px;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+/* header styling */
+
+header nav {
+  margin: 20px;
+}
+
+header nav a {
+  font-family: 'Caveat', cursive;
+  font-size: 19px;
+  background-color: tomato;
+  color: white;
+  border: 1px solid tomato;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+header nav a:hover {
+  background-color: white;
+  color: tomato;
+  border: 1px solid tomato;
+}
+
+header img {
+  height: 200px;
+  width: 100vw;
+  object-fit: cover;
+  box-shadow: 0px 3px 10px orange;
+}
+
+/* editor styling */
+
+section {
+  margin: 15px;
+}
+
+.editorItem {
+  /* float option */
+  float:left;
+  border: 1px solid #cef9fc;
+  border-radius: 5px;
+  width: calc(50% - 10px);
+  margin: 20px 10px 0;
+  
+
+  /* using display inline is not a good option because div will have space between, float will set no space */
+  /* display option 
+  display: inline-block;
+  width: calc(50% - 13px);*/
+}
+
+.editorItem:nth-of-type(1) {
+  margin-left: 0;
+}
+.editorItem:nth-of-type(2) {
+  margin-right: 0;
+}
+
+.editor img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* genre styling */
+
+.genreContainer {
+  border: 1px dotted rgba(255, 99, 71, .3);
+  margin-top: 5px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.genreItem {
+  float:left;
+  border: 1px solid #rgba(255, 99, 71, .3);
+  box-shadow: 1px 1px 2px #f74f31;
+  border-radius: 5px;
+  width: calc(33.3% - 22px);
+  /* height: calc(100% - 20px);
+  overflow: hidden; */
+  margin: 10px;
+  padding: 10px;
+}
+
+.genreItem:hover {
+  box-shadow: 3px 3px 5px #f74f31;
+  cursor: pointer;
+}
+
+.genre img {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+/* footer styling */
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #7209b7;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer {
+  width: 85%;
+  margin: 0 auto;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+}
+
+footer nav a:hover {
+  font-weight: bold;
+}
+

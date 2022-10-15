@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: "Gill Sans";
+    background-color: #282b28;
+}
+
+/* Header Styling */
+header {
+    height: 80px;
+    background-color: #222222;
+    color: #efefef;
+    font-size: 2.1rem;
+    font-weight: bold;
+
+    text-align: center;
+    line-height: 80px;
+
+    /* fix bar */
+    /* sticky position occupies the space, so the next element will not be hidden behind it
+    !! stays within its parent, so once the parent scrolls off, it's gone. No problem here, because parent is body !!
+   
+    fixed = fixed to the viewport >> position will not occupy any space in the body (taken out of the document flow), so the next element will be behind the fixed element and cover a part > so additional margin has to be set */
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Attendees Styling */
+.attendees {
+    width: 85%;
+    margin: 5rem auto;
+    color: #efefef;
+
+    display: grid;
+    /*  auto-fit handle column sizing and element wrapping so that elements will wrap into rows when the width is not large enough to fit them in without any overflow. 
+
+    minimum of 30rem > 30px, and maximum 1fr, so that they expand and equally share any extra space when it is available */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    gap: 1.5rem;
+
+}
+
+.attendees_item {
+    height: 22rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 1rem;
+
+    /* position elements within container */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+.attendees_item p {
+    background-color: rgba(128, 128, 128, 0.6);
+    font-size: 2.2rem;
+    padding: 0.5rem;
+
+}
+.attendees_item i {
+    color: #57B50F;
+    font-size: 4rem;
+}
+
+.attendees div:nth-child(1) {
+    background-image: url("./assets/student-1.jpeg");
+}
+
+.attendees div:nth-child(2) {
+    background-image: url("./assets/student-2.jpeg");
+}
+
+.attendees div:nth-child(3) {
+    background-image: url("./assets/student-3.jpeg");
+}
+
+.attendees div:nth-child(4) {
+    background-image: url("./assets/student-4.jpeg");
+}
+
+.attendees div:nth-child(5) {
+    background-image: url("./assets/student-5.jpeg");
+}
+
+.attendees div:nth-child(6) {
+    background-image: url("./assets/student-6.jpeg");
+}
+
+.attendees div:nth-child(7) {
+    background-image: url("./assets/student-7.jpeg");
+}
+
+.attendees div:nth-child(8) {
+    background-image: url("./assets/student-8.jpeg");
+}
+
+.attendees div:nth-child(9) {
+    background-image: url("./assets/student-9.jpeg");
+}
+
+/* Control Bar */
+.controlBar {
+    height: 100px;
+    background-color: #222222;
+    color: #efefef;
+    font-size: 2rem;
+    font-weight: 400;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    cursor: pointer;
+
+    /* fix bar */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.controlBar [type="button"] {
+    background-color: #ff0000;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+
+    color: #efefef;
+    font-size: 2rem;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.controlBar div:nth-child(1):hover {
+    color: lightskyblue;
+}
+.controlBar div:nth-child(2):hover {
+    color: lightskyblue;
+}
+.controlBar div:nth-child(3):hover {
+    color: lightskyblue;
+}
+.controlBar div:nth-child(4):hover {
+    color: lightskyblue;
+}
+

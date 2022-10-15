@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body styling */
+body {
+    border: 35px solid lightgrey;
+    width: 100vw;
+    height: 100vh;
+
+}
+main {
+    width: calc(50% - 3px);
+    height: 100%;
+    display: inline-block;
+    overflow: auto;
+    padding: 30px;
+}
+
+.image {
+    width: calc(50% - 1px);
+    height: 100%;
+    display: inline-block;
+    /* image | repeat | position */
+    background: url("./images/beach.jpg") no-repeat center ;
+    background-size: cover;
+    border-left: 4px solid lightgrey;
+}
+
+/* nav styling */
+nav {
+    margin: 40px;
+    text-align: right;
+}
+
+li {   
+    display: inline-block;
+    padding-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* section styling */
+h1 {
+    font-style: italic;
+    margin: 80px 0 20px 0;
+}
+p {
+    line-height: 1.6; 
+    margin-bottom: 40px;
+}
+
+
+/* footer styling */
+footer {
+    height: 60px;
+    background-color: lightgrey;
+}
+footer p {
+    padding-right: 30px;
+    /* set height to same height as parent and align vertically */
+    vertical-align: middle;
+    line-height: 60px;
+    text-align: right;
+}

@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+/* body grid styling */
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+    background-color: #d5d5d5;
+    font-family: Helvetica, sans-serif;
+
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-rows: 10% repeat(2, 25%) repeat(2, 17.5%) 15% 10%;
+
+    gap: 15px;
+
+    grid-template-areas:
+        "header header"
+        "article01 aside01"
+        "article01 aside02 "
+        "article02 aside02 "
+        "article02 aside03 "
+        "article02 . "
+        "footer footer"
+    ;
+}
+
+/* header styling */
+header {
+    grid-area: header;
+    background-color: white;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4.5rem;
+}
+
+/* article styling */
+article {
+    background-color: white;
+    padding: 15px;
+}
+
+article h4 {
+    margin: 10px 0;
+}
+
+article img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+
+article p {
+    font-size: 1.4rem;
+    line-height: 22px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.article01 {
+    grid-area: article01;
+}
+
+.article02 {
+    grid-area: article02;
+}
+
+
+
+/* aside styling */
+aside {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+aside img {
+    margin-top: 10px;
+    width: 50px
+}
+
+aside p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.asideAboutMe {
+    grid-area: aside01;
+}
+
+.asidePosts {
+    grid-area: aside02;
+}
+
+.asidePosts img {
+    display: block;
+    width: 60%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.asideFollow {
+    grid-area: aside03;
+}
+
+
+/* footer styling */
+footer {
+    grid-area: footer;
+    background-color: white;
+    font-weight: bold;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+
+    /* body grid styling */
+    body {
+        /* display: block; */
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(7, auto);
+
+        grid-template-areas:
+            "header"
+            "article01"
+            "article02"
+            "aside01"
+            "aside02"
+            "aside03"
+            "footer";
+    }
+
+    /* header styling */
+    header {
+        padding: 15px;
+    }
+
+    /* article styling */
+    article img {
+        height: 30%;
+    }
+
+    article p {
+        font-size: 1.2rem;
+        line-height: 14px;
+    }
+
+    /* footer styling */
+    footer {
+        padding: 15px;
+    }
+}

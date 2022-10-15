@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F6F6EE;
+    padding: 0 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* header styling */
+nav {
+    width: 100%;
+    height: 100px;
+    line-height: 120px;
+}
+
+.button {
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 15px;
+}
+
+/* link style classes */
+.bright {
+    background-color: none;
+    color: black;
+    border: 1px solid black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.hoverBright:hover {
+    background-color: #F6F6EE;
+    color: black;
+    border: 1px solid black;
+}
+
+.hoverDark:hover {
+    background-color: black;
+    color: #F6F6EE;
+}
+
+
+
+/* content styling */
+div {
+    width: 33.3%;
+    height: calc(100vh - 300px);
+}
+
+/* left side */
+h1 {
+    font-size: 100px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* middle */
+img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+img:hover {
+    padding: 0;
+    cursor: pointer;
+}
+
+/* right side */
+div:nth-of-type(3) {
+    text-align: right;
+    line-height: calc(100vh - 400px);
+}
+
+div a {
+    padding: 15px 20px;
+    border-radius: 30px;
+
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+div a::after {
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+/* footer styling */
+footer {
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+footer a {
+    border: none !important;
+    padding: 15px 20px;
+    border-radius: 30px;
+
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+footer a::before {
+    content: "\f063";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    padding-right: 5px;
+}

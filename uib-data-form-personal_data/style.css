@@ -1,0 +1,125 @@
+/* reset css */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+/* header styling */
+header {
+  width: 100vw;
+  height: 40px;
+  background-color: #353A40;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+/* main styling */
+main {
+  padding: 20px;
+}
+
+
+.formColumn {
+  display: inline-block;
+  width: calc(50% - 13px);
+  vertical-align: top;
+}
+
+div:first-of-type {
+  margin-right: 20px;
+}
+
+div {
+  display: block;
+}
+
+/* fieldset & legend styling */
+fieldset {
+  padding: 20px;
+  border-radius: 7px;
+}
+
+legend {
+  padding: 10px;
+  color: #4A86ED;
+  font-weight: bold;
+}
+
+/* form content styling */
+fieldset>label {
+  display: block;
+  padding: 12px 0 7px 0;
+  font-weight: bold;
+}
+
+fieldset>input,
+textarea,
+select {
+  display: block;
+  border: 1px solid #4A86ED;
+  border-radius: 7px;
+  width: 100%;
+  height: 30px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+textarea::placeholder {
+  padding: 5px 10px;
+}
+
+/* radio & checkbox section styling */
+input[type="radio"],
+input[type="checkbox"] {
+  height: 1em;
+}
+
+.web_design label,
+.web_dev label {
+  font-weight: normal;
+}
+
+.web_design div {
+  display: inline-block;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.web_dev div {
+  padding: 10px 0 0;
+}
+
+.web_dev div:last-child {
+  margin-bottom: 10px;
+}
+
+
+/* submit button styling */
+input[type="submit"] {
+  width: 130px;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 7px;
+  background-color: #52AB1B;
+  border: 2px solid #52AB1B;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  border: 2px solid #52AB1B;
+  color: #52AB1B;
+}
